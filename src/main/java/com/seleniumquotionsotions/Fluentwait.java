@@ -19,7 +19,7 @@ public class Fluentwait {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
     WebDriverManager.chromedriver().setup();
-    WebDriver driver=new ChromeDriver();
+    final WebDriver driver=new ChromeDriver();
     
     Wait<WebDriver> wait=new FluentWait<WebDriver>(driver)
     .withTimeout(Duration.ofSeconds(4))
