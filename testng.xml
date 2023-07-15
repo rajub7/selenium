@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="interview queitions "  thread-count="5" verbose=10 parallel="methods">
+  <test name="Testng practice">
+  <groups>
+  <run>
+  <include name="sanity"/>
+  </run>
+  <dependencies> 
+  <group name="sanity" depends-on="login test"/>
+  </dependencies>
+  </groups>
+   <parameter name="uid" value="tester456@gmail.com"/>
+      <parameter name="pwd" value="test@123"/>
+  <classes>
+    <class name="com.testng.Annotation"/>       
+    <class name="com.testng.Dataprovider"/> 
+    <class name="com.testng.KeywordsAnnotations"/> 
+    <methods>
+    <exclude name="claim test"/>
+    </methods>
+  </classes>
+  
+  
+  
+ </test> <!-- Test -->
+</suite> <!-- Suite -->
