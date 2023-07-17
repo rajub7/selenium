@@ -1,6 +1,5 @@
 package com.testng;
 
-import org.asynchttpclient.util.HttpConstants.Methods;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -10,12 +9,11 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import org.testng.internal.GroupsHelper;
 
 public class Annotations {
 
 	@BeforeSuite
-	void lauchsetup(){
+	void laoreuchsetup(){
 		System.out.println("B.SUITE--setup procces");
 	}
 	@BeforeTest
@@ -30,12 +28,12 @@ public class Annotations {
 	void appopen(){
 		System.out.println("B.METHOD--application open");
 	}
-	@Test(groups="sanity")
+	@Test(priority = 1,groups = "sanity")
 	void logintest(){
 		System.out.println("sanity test group");
 		System.out.println("login test pass");
 	}
-	@Test(priority=1,dependsOnMethods="logintest",groups="sanity")
+	@Test(priority=2,groups ="regression")
 	void homepagetest(){
 		System.out.println("sanity test group");
 		System.out.println("homepage test pass");

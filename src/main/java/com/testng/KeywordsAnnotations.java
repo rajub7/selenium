@@ -7,37 +7,32 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import net.bytebuddy.build.Plugin.Factory.UsingReflection.Priority;
+
 
 
 public class KeywordsAnnotations {
-	@BeforeMethod(alwaysRun=true)
-	void appopen(){
-		System.out.println("application open");
-	}
-	 
-	@Test()
-	@Parameters({"uid","pwd"})
+	
+	@Parameters({"uid","pwd"}) 
+	@Test(priority = 5)
 	void logintest(String uid,String pwd){
-		Assert.assertEquals("raju", "raju");
+		System.out.println(uid+" "+pwd);
 		System.out.println("login test pass");
 	}
-	@Test(enabled=false,timeOut=1000)
+	@Test(enabled=false)
 	void homepagetest(){
 		Assert.assertTrue(false);
-		System.out.println("homepage test pass");
+		System.out.println("homepage test fail");
 	}
-	@Test
+	@Test(priority = 6)
 	void dealstest(){
 		Assert.assertFalse(false);
 		throw new SkipException("throw exception");
 	}
-	@Test(invocationCount=10)
+	@Test(priority = 7)
 	void claimtest(){
 		Assert.assertNotEquals("raju", "rani");
-		throw new SkipException("throw exception");
+		System.out.println("claimtest pass");
 	}
-	@AfterMethod
-	void closeapp(){
-		System.out.println("application close");
-	}
+	
 }

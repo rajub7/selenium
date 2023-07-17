@@ -1,8 +1,7 @@
 package com.utilities;
 
-import java.awt.print.Printable;
 
-import org.checkerframework.common.reflection.qual.ForName;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
