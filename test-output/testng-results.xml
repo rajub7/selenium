@@ -1,197 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="8" failed="0" skipped="1">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-17T21:35:22 IST" name="Suite1" finished-at="2023-07-17T21:35:24 IST" duration-ms="1395">
+  <suite started-at="2023-07-17T22:00:02 IST" name="Suite1" finished-at="2023-07-17T22:00:03 IST" duration-ms="1330">
     <groups>
       <group name="regression">
-        <method signature="Annotations.homepagetest()[pri:2, instance:com.testng.Annotations@6c284af]" name="homepagetest" class="com.testng.Annotations"/>
+        <method signature="Annotations.homepagetest()[pri:2, instance:com.testng.Annotations@663c9e7a]" name="homepagetest" class="com.testng.Annotations"/>
       </group> <!-- regression -->
-      <group name="sanity">
-        <method signature="Annotations.logintest()[pri:1, instance:com.testng.Annotations@6c284af]" name="logintest" class="com.testng.Annotations"/>
-      </group> <!-- sanity -->
     </groups>
-    <test started-at="2023-07-17T21:35:22 IST" name="testng report" finished-at="2023-07-17T21:35:24 IST" duration-ms="1395">
-      <class name="com.testng.KeywordsAnnotations">
-        <test-method signature="logintest(java.lang.String,java.lang.String)[pri:5, instance:com.testng.KeywordsAnnotations@2b40ff9c]" started-at="2023-07-17T21:35:24 IST" name="logintest" finished-at="2023-07-17T21:35:24 IST" duration-ms="14" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[raju]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[ravi]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logintest -->
-        <test-method signature="dealstest()[pri:6, instance:com.testng.KeywordsAnnotations@2b40ff9c]" started-at="2023-07-17T21:35:24 IST" name="dealstest" finished-at="2023-07-17T21:35:24 IST" duration-ms="73" status="SKIP">
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[throw exception]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: throw exception
-at com.testng.KeywordsAnnotations.dealstest(KeywordsAnnotations.java:30)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dealstest -->
-        <test-method signature="claimtest()[pri:7, instance:com.testng.KeywordsAnnotations@2b40ff9c]" started-at="2023-07-17T21:35:24 IST" name="claimtest" finished-at="2023-07-17T21:35:24 IST" duration-ms="11" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- claimtest -->
-      </class> <!-- com.testng.KeywordsAnnotations -->
+    <test started-at="2023-07-17T22:00:02 IST" name="sanity reports" finished-at="2023-07-17T22:00:03 IST" duration-ms="1330">
       <class name="com.testng.Annotations">
-        <test-method is-config="true" signature="laoreuchsetup()[pri:0, instance:com.testng.Annotations@6c284af]" started-at="2023-07-17T21:35:22 IST" name="laoreuchsetup" finished-at="2023-07-17T21:35:22 IST" duration-ms="99" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- laoreuchsetup -->
-        <test-method is-config="true" signature="openurl()[pri:0, instance:com.testng.Annotations@6c284af]" started-at="2023-07-17T21:35:22 IST" name="openurl" finished-at="2023-07-17T21:35:23 IST" duration-ms="16" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openurl -->
-        <test-method is-config="true" signature="browserlaunch()[pri:0, instance:com.testng.Annotations@6c284af]" started-at="2023-07-17T21:35:23 IST" name="browserlaunch" finished-at="2023-07-17T21:35:23 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserlaunch -->
-        <test-method is-config="true" signature="appopen()[pri:0, instance:com.testng.Annotations@6c284af]" started-at="2023-07-17T21:35:23 IST" name="appopen" finished-at="2023-07-17T21:35:23 IST" duration-ms="9" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- appopen -->
-        <test-method signature="logintest()[pri:1, instance:com.testng.Annotations@6c284af]" started-at="2023-07-17T21:35:23 IST" name="logintest" finished-at="2023-07-17T21:35:23 IST" duration-ms="62" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logintest -->
-        <test-method is-config="true" signature="closeapp()[pri:0, instance:com.testng.Annotations@6c284af]" started-at="2023-07-17T21:35:23 IST" name="closeapp" finished-at="2023-07-17T21:35:23 IST" duration-ms="20" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeapp -->
-        <test-method is-config="true" signature="appopen()[pri:0, instance:com.testng.Annotations@6c284af]" started-at="2023-07-17T21:35:23 IST" name="appopen" finished-at="2023-07-17T21:35:23 IST" duration-ms="9" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- appopen -->
-        <test-method signature="homepagetest()[pri:2, instance:com.testng.Annotations@6c284af]" started-at="2023-07-17T21:35:23 IST" name="homepagetest" finished-at="2023-07-17T21:35:23 IST" duration-ms="39" status="PASS">
+        <test-method signature="homepagetest()[pri:2, instance:com.testng.Annotations@663c9e7a]" started-at="2023-07-17T22:00:02 IST" name="homepagetest" finished-at="2023-07-17T22:00:03 IST" duration-ms="227" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homepagetest -->
-        <test-method is-config="true" signature="closeapp()[pri:0, instance:com.testng.Annotations@6c284af]" started-at="2023-07-17T21:35:23 IST" name="closeapp" finished-at="2023-07-17T21:35:23 IST" duration-ms="5" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeapp -->
-        <test-method is-config="true" signature="browserclose()[pri:0, instance:com.testng.Annotations@6c284af]" started-at="2023-07-17T21:35:23 IST" name="browserclose" finished-at="2023-07-17T21:35:23 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserclose -->
-        <test-method is-config="true" signature="urlclose()[pri:0, instance:com.testng.Annotations@6c284af]" started-at="2023-07-17T21:35:24 IST" name="urlclose" finished-at="2023-07-17T21:35:24 IST" duration-ms="6" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- urlclose -->
-        <test-method is-config="true" signature="closestop()[pri:0, instance:com.testng.Annotations@6c284af]" started-at="2023-07-17T21:35:25 IST" name="closestop" finished-at="2023-07-17T21:35:25 IST" duration-ms="10" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closestop -->
       </class> <!-- com.testng.Annotations -->
-      <class name="com.testng.Dataprovider">
-        <test-method signature="logintest(java.lang.String,java.lang.String)[pri:3, instance:com.testng.Dataprovider@451001e5]" started-at="2023-07-17T21:35:23 IST" name="logintest" data-provider="homedata" finished-at="2023-07-17T21:35:23 IST" duration-ms="28" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[RAJU]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[RANI]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logintest -->
-        <test-method signature="logintest(java.lang.String,java.lang.String)[pri:3, instance:com.testng.Dataprovider@451001e5]" started-at="2023-07-17T21:35:23 IST" name="logintest" data-provider="homedata" finished-at="2023-07-17T21:35:23 IST" duration-ms="25" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[CHERRY]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[TONY]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logintest -->
-        <test-method signature="homepagetest(java.lang.String,java.lang.String)[pri:4, instance:com.testng.Dataprovider@451001e5]" started-at="2023-07-17T21:35:23 IST" name="homepagetest" data-provider="homedata" finished-at="2023-07-17T21:35:23 IST" duration-ms="17" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[RAJU]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[RANI]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- homepagetest -->
-        <test-method signature="homepagetest(java.lang.String,java.lang.String)[pri:4, instance:com.testng.Dataprovider@451001e5]" started-at="2023-07-17T21:35:23 IST" name="homepagetest" data-provider="homedata" finished-at="2023-07-17T21:35:23 IST" duration-ms="24" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[CHERRY]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[TONY]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- homepagetest -->
-      </class> <!-- com.testng.Dataprovider -->
-    </test> <!-- testng report -->
+    </test> <!-- sanity reports -->
   </suite> <!-- Suite1 -->
 </testng-results>
