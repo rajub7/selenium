@@ -10,7 +10,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class Launchbrowser {
 
 	public static void main(String[] args) {
-				
+		ChromeOptions opt=new ChromeOptions();
+		opt.addArguments("--remote-allow-origins=*");		
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://google.com");
