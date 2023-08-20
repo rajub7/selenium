@@ -5,8 +5,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+
+
 
 public class Alerthandling {
 
@@ -14,8 +18,10 @@ public class Alerthandling {
 		// TODO Auto-generated method stub
 		ChromeOptions opt=new ChromeOptions();
 		opt.addArguments("--remote-allow-origins=*");
-     WebDriverManager.chromedriver().setup();
-     WebDriver driver=new ChromeDriver(opt);
+       WebDriverManager.chromedriver().setup();
+
+	    WebDriver driver=new ChromeDriver();
+    
      driver.get("https://the-internet.herokuapp.com/javascript_alerts");
      Thread.sleep(4000);
      driver.findElement(By.xpath("//button[normalize-space()='Click for JS Alert']")).click();
@@ -41,4 +47,5 @@ public class Alerthandling {
       
 	}
 
+	
 }

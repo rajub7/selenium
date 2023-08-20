@@ -20,6 +20,8 @@ public class Datepickerhandling {
 		// TODO Auto-generated method stub
 		ChromeOptions opt=new ChromeOptions();
 		opt.addArguments("--disable-notifications");
+	
+		opt.addArguments("--remote-allow-origins=*");
 		// TODO Auto-generated method stub
 		  WebDriverManager.chromedriver().setup();
 		     WebDriver driver=new ChromeDriver(opt);

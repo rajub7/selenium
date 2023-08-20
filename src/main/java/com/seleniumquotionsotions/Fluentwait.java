@@ -9,6 +9,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 
@@ -18,6 +19,8 @@ public class Fluentwait {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		ChromeOptions opt=new ChromeOptions();
+		opt.addArguments("--remote-allow-origins=*");
     WebDriverManager.chromedriver().setup();
     final WebDriver driver=new ChromeDriver();
     
