@@ -5,11 +5,8 @@
     <classes>
       <class name="com.testng.KeywordsAnnotations">
         <methods>
-          <include name="appopen"/>
           <include name="dealstest"/>
           <include name="logintest"/>
-          <include name="claimtest"/>
-          <include name="closeapp"/>
         </methods>
       </class> <!-- com.testng.KeywordsAnnotations -->
     </classes>

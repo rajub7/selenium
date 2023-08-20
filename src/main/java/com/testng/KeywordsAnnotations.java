@@ -11,28 +11,28 @@ import org.testng.annotations.Test;
 
 
 
-public class KeywordsAnnotations {
+public class KeywordsAnnotations  {
 	
 	@Parameters({"uid","pwd"}) 
 	@Test(priority = 5)
 	void logintest(String uid,String pwd){
 		System.out.println(uid+" "+pwd);
-		System.out.println("login test pass");
+		System.out.println("login test pass ");
 	}
 	@Test(enabled=false)
 	void homepagetest(){
 		Assert.assertTrue(false);
-		System.out.println("homepage test fail");
+		System.out.println("homepage test fail ");
 	}
 	@Test(priority = 6)
 	void dealstest(){
 		Assert.assertFalse(false);
-		throw new SkipException("throw exception");
+		throw new SkipException("throw exception ");
 	}
 	@Test(priority = 7)
 	void claimtest(){
 		Assert.assertNotEquals("raju", "rani");
-		System.out.println("claimtest pass");
+		System.out.println("claimtest pass ");
 	}
 	
 }

@@ -14,19 +14,19 @@ public class Annotations {
 
 	@BeforeSuite
 	void laoreuchsetup(){
-		System.out.println("B.SUITE--setup procces");
+		System.out.println("BeforeSuite--------setup procces");
 	}
 	@BeforeTest
 	void openurl(){
-		System.out.println("B.TEST--passing the url");
+		System.out.println("BeforeTest----------passing the url");
 	}
 	@BeforeClass
 	void browserlaunch(){
-		System.out.println("B.CLASS--launching browser");
+		System.out.println("BeforeClass----------launching browser");
 	}
 	@BeforeMethod
 	void appopen(){
-		System.out.println("B.METHOD--application open");
+		System.out.println("BeforeMethod------------application open");
 	}
 	@Test(priority = 1,groups = "sanity")
 	void logintest(){
@@ -40,19 +40,19 @@ public class Annotations {
 	}
 	@AfterMethod
 	void closeapp(){
-		System.out.println("A.METHOD--application close");
+		System.out.println("AfterMethod-------------application close");
 	}
 	@AfterClass
 	void browserclose(){
-		System.out.println("A.CLASS---clossing browser");
+		System.out.println("AfterClass---------------clossing browser");
 	}
 	@AfterTest
 	void urlclose(){
-		System.out.println("A.TEST--clossing url");
+		System.out.println("AfterTest--------------------clossing url");
 	}
 	@AfterSuite
 	void closestop(){
-		System.out.println("A.SUITE--stopping proccing");
+		System.out.println("AfterSuite-----------------------stopping proccing");
 	}
 
 }

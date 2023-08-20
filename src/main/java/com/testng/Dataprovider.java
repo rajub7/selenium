@@ -20,12 +20,13 @@ public class Dataprovider {
 	
 	@Test(priority = 3,dataProvider="homedata")
 	void logintest(String uid,String pwd){
-		System.out.println("login test pass");
+		System.out.println(uid+" "+pwd);
+		System.out.println("login test pass ");
 	}
 	@Test(priority = 4,  dataProvider="homedata")
 	void homepagetest(String uid,String pwd){
 		System.out.println(uid+" "+pwd);
-		System.out.println("homepage test pass");
+		System.out.println("homepage test pass ");
 	}
 	
 		
