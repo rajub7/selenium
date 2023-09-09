@@ -18,7 +18,7 @@ public class Autocompletedropdown {
 		ChromeOptions opt=new ChromeOptions();
 		opt.addArguments("--remote-allow-origins=*");
      WebDriverManager.chromedriver().setup();
-     WebDriver driver=new ChromeDriver();
+     WebDriver driver=new ChromeDriver(opt);
      driver.get("https://www.twoplugs.com");
      driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
      driver.findElement(By.xpath("//a[normalize-space()='Live Posting']")).click();

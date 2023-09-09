@@ -4,14 +4,12 @@ import org.testng.Assert;
 import org.testng.SkipException;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 
-
-
-
-public class KeywordsAnnotations  {
+public class KeywordsAnnotations extends Annotations {
 	
 	@Parameters({"uid","pwd"}) 
 	@Test(priority = 5)

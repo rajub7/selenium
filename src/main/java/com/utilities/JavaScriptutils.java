@@ -38,7 +38,7 @@ public class JavaScriptutils {
 		// TODO Auto-generated method stub
 		
 		JavascriptExecutor js=(JavascriptExecutor)driver;
-		js.executeScript("arguments[0].click()",msg);
+		js.executeScript("alert('"+msg+"')");
 	
 	}
 	public static void refreshbrowser (WebDriver driver) {
@@ -52,14 +52,14 @@ public class JavaScriptutils {
 		// TODO Auto-generated method stub
 		
 		JavascriptExecutor js=(JavascriptExecutor)driver;
-		js.executeScript("window.scrollto(0,document.body.scrollHeight)");
+		js.executeScript("window.scrollTo(0,document.body.scrollHeight)");
 	
 	}
 	public static void scrollupjs (WebDriver driver) {
 		// TODO Auto-generated method stub
 		
 		JavascriptExecutor js=(JavascriptExecutor)driver;
-		js.executeScript("window.scrollby(0,-document.body.scrollHeight)");
+		js.executeScript("window.scrollBy(0,-document.body.scrollHeight)");
 	
 	}
 	public static void zoomup(WebDriver driver) {
@@ -67,6 +67,13 @@ public class JavaScriptutils {
 		
 		JavascriptExecutor js=(JavascriptExecutor)driver;
 		js.executeScript("document.body.style.zoom='50%'");
+	
+	}
+	public static void scrollintoview (WebDriver driver,WebElement ele) {
+		// TODO Auto-generated method stub
+		
+		JavascriptExecutor js=(JavascriptExecutor)driver;
+		js.executeScript("arguments[0].scrollIntoView(true);",ele);
 	
 	}
 }

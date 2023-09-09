@@ -8,15 +8,20 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-public class Annotations {
 
+
+
+public class Annotations {
+	
+   
 	@BeforeSuite
 	void laoreuchsetup(){
 		System.out.println("BeforeSuite--------setup procces");
 	}
-	@BeforeTest
+	/*@BeforeTest
 	void openurl(){
 		System.out.println("BeforeTest----------passing the url");
 	}
@@ -27,10 +32,12 @@ public class Annotations {
 	@BeforeMethod
 	void appopen(){
 		System.out.println("BeforeMethod------------application open");
-	}
+	} */
 	@Test(priority = 1,groups = "sanity")
 	void logintest(){
 		System.out.println("sanity test group");
+		
+		
 		System.out.println("login test pass");
 	}
 	@Test(priority=2,groups ="regression")
@@ -38,7 +45,7 @@ public class Annotations {
 		System.out.println("sanity test group");
 		System.out.println("homepage test pass");
 	}
-	@AfterMethod
+/*	@AfterMethod
 	void closeapp(){
 		System.out.println("AfterMethod-------------application close");
 	}
@@ -49,10 +56,11 @@ public class Annotations {
 	@AfterTest
 	void urlclose(){
 		System.out.println("AfterTest--------------------clossing url");
-	}
+	} */
 	@AfterSuite
 	void closestop(){
 		System.out.println("AfterSuite-----------------------stopping proccing");
 	}
+	
 
 }
