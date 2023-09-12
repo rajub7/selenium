@@ -32,7 +32,7 @@ public class CaptureScrennshot {
 		FileUtils.copyFile(src, file);*/
 		
 		WebElement ele=driver.findElement(By.xpath("(//div[@class='oxd-sheet oxd-sheet--rounded oxd-sheet--gutters oxd-sheet--gray-lighten-2 orangehrm-demo-credentials'])[1]"));
-		TakesScreenshot ts= (TakesScreenshot)driver;
+		//TakesScreenshot ts= (TakesScreenshot)driver;
 		File src= ele.getScreenshotAs(OutputType.FILE);
 		File file=new File(".\\screenshots\\elementpage.jpg");
 		FileUtils.copyFile(src, file);

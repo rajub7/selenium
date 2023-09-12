@@ -31,13 +31,14 @@ public class ReadFormulaCell {
 			Cell cell=	rows.getCell(j);
 				
 				switch (cell.getCellType()) {
-				case STRING:System.out.print(cell.getStringCellValue()+"  ");
+			/*	case STRING:System.out.print(cell.getStringCellValue()+"  ");
 					
 					break;
 					
 				case NUMERIC:System.out.print(cell.getNumericCellValue()+" ");
-				
+				  break;*/
 				case FORMULA:System.out.print(cell.getNumericCellValue()+" ");
+				   break;
 
 				default:
 					break;

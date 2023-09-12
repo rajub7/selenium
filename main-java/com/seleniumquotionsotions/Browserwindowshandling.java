@@ -28,7 +28,7 @@ public class Browserwindowshandling {
 		for(String str:windows){
 		String text=driver.switchTo().window(str).getTitle();
 		System.out.println(text);
-		if(!parentwin.equals(str)){
+		if(parentwin.equals(str)){
 			driver.close();
 		}
 		}

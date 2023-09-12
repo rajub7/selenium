@@ -10,7 +10,7 @@ import org.openqa.selenium.interactions.Actions;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-
+import org.openqa.selenium.interactions.Action;
 
 public class ActionvsActions {
 
@@ -28,10 +28,12 @@ public class ActionvsActions {
 		WebElement ele1=driver.findElement(By.xpath("//a[contains(text(),'Mac (1)')]"));
 
 		Actions act=new Actions(driver);
+		
 	
-		org.openqa.selenium.interactions.Action action=act.moveToElement(ele).build();
+		 Action action=act.moveToElement(ele).build();
 		action.perform();
        act.moveToElement(ele1).click().perform();
+      
 	}
 
 }
