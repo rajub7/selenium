@@ -7,7 +7,7 @@
 
     <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
     <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
-    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="jquery.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -21,7 +21,8 @@
      -->
   </head>
 
-  <body>    <div class="top-banner-root">
+  <body>
+    <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
@@ -39,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite1" class="navigator-link">
-              <span class="suite-name border-passed">Suite1</span>
+              <span class="suite-name border-skipped">Suite1</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite1" class="navigator-link ">
-                    <span>E:\selineum.project\seleniuminterview\selenium\testng1.xml</span>
+                    <span>E:\selineum.project\seleniuminterview\selenium\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -60,7 +61,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Suite1" class="navigator-link ">
-                    <span>1 group</span>
+                    <span>2 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">9 methods,  1 skipped,  8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite1" class="hide-methods skipped suite-Suite1"> (hide)</a> <!-- hide-methods skipped suite-Suite1 -->
+                      <a href="#" panel-name="suite-Suite1" class="show-methods skipped suite-Suite1"> (show)</a> <!-- show-methods skipped suite-Suite1 -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite1">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="com.testng.KeywordsAnnotations" class="method navigator-link" hash-for-method="dealstest">dealstest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite1 -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +118,42 @@
                     <div class="method-list-content passed suite-Suite1">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="com.testng.KeywordsAnnotations" class="method navigator-link" hash-for-method="claimtest">claimtest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="com.testng.Dataprovider" class="method navigator-link" hash-for-method="homepagetest(RAJU, RANI)">homepagetest(RAJU, RANI)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="com.testng.Dataprovider" class="method navigator-link" hash-for-method="homepagetest(CHERRY, TONY)">homepagetest(CHERRY, TONY)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite1" title="com.testng.Annotations" class="method navigator-link" hash-for-method="homepagetest">homepagetest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="com.testng.Annotations" class="method navigator-link" hash-for-method="logintest">logintest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="com.testng.Dataprovider" class="method navigator-link" hash-for-method="logintest(RAJU, RANI)">logintest(RAJU, RANI)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="com.testng.KeywordsAnnotations" class="method navigator-link" hash-for-method="logintest(raju, ravi)">logintest(raju, ravi)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="com.testng.Dataprovider" class="method navigator-link" hash-for-method="logintest(CHERRY, TONY)">logintest(CHERRY, TONY)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite1 -->
@@ -118,6 +168,49 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite1" class="panel Suite1">
+          <div class="suite-Suite1-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.testng.KeywordsAnnotations</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="dealstest">
+                  </a> <!-- dealstest -->
+                  <span class="method-name">dealstest</span>
+                  <div class="stack-trace">org.testng.SkipException: throw exception
+	at com.testng.KeywordsAnnotations.dealstest(KeywordsAnnotations.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-skipped -->
+          <div class="suite-Suite1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.testng.KeywordsAnnotations</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="claimtest">
+                  </a> <!-- claimtest -->
+                  <span class="method-name">claimtest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logintest(raju, ravi)">
+                  </a> <!-- logintest(raju, ravi) -->
+                  <span class="method-name">logintest</span>
+                  <span class="parameters">(raju, ravi)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-passed -->
           <div class="suite-Suite1-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -131,29 +224,74 @@
                   <span class="method-name">homepagetest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logintest">
+                  </a> <!-- logintest -->
+                  <span class="method-name">logintest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-passed -->
+          <div class="suite-Suite1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.testng.Dataprovider</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="homepagetest(RAJU, RANI)">
+                  </a> <!-- homepagetest(RAJU, RANI) -->
+                  <span class="method-name">homepagetest</span>
+                  <span class="parameters">(RAJU, RANI)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="homepagetest(CHERRY, TONY)">
+                  </a> <!-- homepagetest(CHERRY, TONY) -->
+                  <span class="method-name">homepagetest</span>
+                  <span class="parameters">(CHERRY, TONY)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logintest(RAJU, RANI)">
+                  </a> <!-- logintest(RAJU, RANI) -->
+                  <span class="method-name">logintest</span>
+                  <span class="parameters">(RAJU, RANI)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logintest(CHERRY, TONY)">
+                  </a> <!-- logintest(CHERRY, TONY) -->
+                  <span class="method-name">logintest</span>
+                  <span class="parameters">(CHERRY, TONY)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite1-class-passed -->
         </div> <!-- panel Suite1 -->
         <div panel-name="test-xml-Suite1" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">E:\selineum.project\seleniuminterview\selenium\testng1.xml</span>
+            <span class="header-content">E:\selineum.project\seleniuminterview\selenium\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite1&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;sanity reports&quot;&gt;
-    &lt;groups&gt;
-      &lt;run&gt;
-        &lt;include name=&quot;regression&quot;/&gt;
-        &lt;exclude name=&quot;sanity&quot;/&gt;
-      &lt;/run&gt;
-    &lt;/groups&gt;
+  &lt;parameter name=&quot;uid&quot; value=&quot;raju&quot;/&gt;
+  &lt;parameter name=&quot;pwd&quot; value=&quot;ravi&quot;/&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;testng report&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.testng.Annotations&quot;/&gt;
+      &lt;class name=&quot;com.testng.Dataprovider&quot;/&gt;
+      &lt;class name=&quot;com.testng.KeywordsAnnotations&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- sanity reports --&gt;
+  &lt;/test&gt; &lt;!-- testng report --&gt;
 &lt;/suite&gt; &lt;!-- Suite1 --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -165,7 +303,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">sanity reports (1 class)</span>
+                <span class="test-name">testng report (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -180,6 +318,14 @@
               <br/>
               <div class="method-in-group">
                 <span class="method-in-group-name">homepagetest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">sanity</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">logintest</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -199,16 +345,48 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(9);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'homepagetest')
-data.setCell(0, 2, 'com.testng.Annotations')
-data.setCell(0, 3, 227);
+data.setCell(0, 1, 'dealstest')
+data.setCell(0, 2, 'com.testng.KeywordsAnnotations')
+data.setCell(0, 3, 197);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'logintest')
+data.setCell(1, 2, 'com.testng.Annotations')
+data.setCell(1, 3, 136);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'logintest')
+data.setCell(2, 2, 'com.testng.KeywordsAnnotations')
+data.setCell(2, 3, 99);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'homepagetest')
+data.setCell(3, 2, 'com.testng.Dataprovider')
+data.setCell(3, 3, 98);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'homepagetest')
+data.setCell(4, 2, 'com.testng.Dataprovider')
+data.setCell(4, 3, 95);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'logintest')
+data.setCell(5, 2, 'com.testng.Dataprovider')
+data.setCell(5, 3, 84);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'claimtest')
+data.setCell(6, 2, 'com.testng.KeywordsAnnotations')
+data.setCell(6, 3, 66);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'logintest')
+data.setCell(7, 2, 'com.testng.Dataprovider')
+data.setCell(7, 3, 61);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'homepagetest')
+data.setCell(8, 2, 'com.testng.Annotations')
+data.setCell(8, 3, 21);
 window.suiteTableData['Suite1']= { tableData: data, tableDiv: 'times-div-Suite1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 227 ms</span>
+              <span class="suite-total-time">Total running time: 857 ms</span>
               <div id="times-div-Suite1">
               </div> <!-- times-div-Suite1 -->
             </div> <!-- times-div -->
@@ -227,9 +405,9 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.testng.Annotations</span>
+              <span class="ignored-class-name">com.testng.KeywordsAnnotations</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">logintest</span>
+                <span class="ignored-method-name">homepagetest</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -242,10 +420,91 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">com.testng.Annotations</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">laoreuchsetup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-test before">
+                <span class="method-name">openurl</span>
+                <span class="method-start">337 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">browserlaunch</span>
+                <span class="method-start">1257 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">appopen</span>
+                <span class="method-start">1655 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">logintest</span>
+                <span class="method-start">1686 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeapp</span>
+                <span class="method-start">1945 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">appopen</span>
+                <span class="method-start">1971 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">homepagetest</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">2049 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeapp</span>
+                <span class="method-start">2139 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">browserclose</span>
+                <span class="method-start">2146 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testng.Dataprovider</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">logintest(RAJU, RANI)</span>
+                <span class="method-start">2249 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">logintest(CHERRY, TONY)</span>
+                <span class="method-start">2413 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">homepagetest(RAJU, RANI)</span>
+                <span class="method-start">2784 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">homepagetest(CHERRY, TONY)</span>
+                <span class="method-start">2953 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testng.KeywordsAnnotations</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">logintest(raju, ravi)</span>
+                <span class="method-start">3148 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">dealstest</span>
+                <span class="method-start">3307 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">claimtest</span>
+                <span class="method-start">3556 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testng.Annotations</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">urlclose</span>
+                <span class="method-start">3801 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-suite after">
+                <span class="method-name">closestop</span>
+                <span class="method-start">5500 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

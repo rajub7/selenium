@@ -1,6 +1,7 @@
 package com.seleniumquotionsotions;
 
 import java.time.Duration;
+import java.util.concurrent.TimeUnit;
 
 import net.bytebuddy.asm.Advice.Return;
 
@@ -21,6 +22,7 @@ public class Multiplewaits {
     WebDriverManager.chromedriver().setup();
     WebDriver driver=new ChromeDriver();
     driver.get("https://www.google.com");
+    driver.manage().timeouts().pageLoadTimeout(4, TimeUnit.SECONDS);
     driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
     WebElement ele=driver.findElement(By.xpath("//textarea[@id='APjFqb']"));
     ele.sendKeys("java");

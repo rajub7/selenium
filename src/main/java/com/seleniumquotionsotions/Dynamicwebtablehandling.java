@@ -1,3 +1,4 @@
+
 package com.seleniumquotionsotions;
 
 import java.util.List;
@@ -13,7 +14,8 @@ public class Dynamicwebtablehandling {
 
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
-		WebDriverManager.chromedriver().setup();
+		//WebDriverManager.chromedriver().setup();
+		System.setProperty("webdriver.chrome.driver", "E:\\chromedriver-win64\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://codepen.io/yasser-mas/pen/pyWPJd");
 	//	driver.findElement(By.xpath("//span[@class='mark']")).click();

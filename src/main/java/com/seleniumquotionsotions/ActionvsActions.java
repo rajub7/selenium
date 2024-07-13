@@ -15,10 +15,10 @@ public class ActionvsActions {
 
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
-		WebDriverManager.chromedriver().setup();
+		System.setProperty("webdriver.chrome.driver", "E:\\chromedriver-win64\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://demo.opencart.com/");
-		Thread.sleep(4000);
+		Thread.sleep(10000);
 		WebElement ele=driver.findElement(By.xpath("//a[contains(text(),'Desktops')]"));
 		WebElement ele1=driver.findElement(By.xpath("//a[contains(text(),'Mac (1)')]"));
 
