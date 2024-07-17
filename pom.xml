@@ -164,8 +164,7 @@
     <artifactId>testng</artifactId>
     <version>7.8.0</version>
     <scope>compile</scope>
-<<<<<<< HEAD
-=======
+
 </dependency>
 
 <!-- https://mvnrepository.com/artifact/junit/junit -->
