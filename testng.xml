@@ -10,9 +10,9 @@
     
 	 <test name="testng report">
     <classes>
-       <class name="com.testng.Annotations"/>
-      <class name="com.testng.Dataprovider"/>
-      <class name="com.testng.KeywordsAnnotations"/>
+       <class name="testng.Annotations"/>
+      <class name="testng.Dataprovider"/>
+      <class name="testng.KeywordsAnnotations"/>
     </classes>
 	 </test>
 	
